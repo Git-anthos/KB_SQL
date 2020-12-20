@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F0DF246E-2D57-20B3-A056-BFDCE539D9D9" schemaObject="BFCDB77A-CCD5-CBEE-740E-3B0C10D0E93E" name="DEPARTMENTS">
+<sourceConnName>SYS</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>DEPARTMENTS</sourceObjName>
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Departments table that shows details of departments where employees
+work. Contains 27 rows; references with locations, employees, and job_history tables.]]></commentInRDBMS>
+<ownerDesignName>hrsql</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEPARTMENT_ID" id="50ACD110-C125-0F97-9B8D-E4C643621177">
+<sourceConnName>SYS</sourceConnName>
+<sourceObjSchema>DEPARTMENTS</sourceObjSchema>
+<sourceObjName>DEPARTMENT_ID</sourceObjName>
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primary key column of departments table.]]></commentInRDBMS>
+<ownerDesignName>hrsql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTMENT_NAME" id="545B6140-C593-8552-DEE2-DD491DBA9312">
+<sourceConnName>SYS</sourceConnName>
+<sourceObjSchema>DEPARTMENTS</sourceObjSchema>
+<sourceObjName>DEPARTMENT_NAME</sourceObjName>
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[A not null column that shows name of a department. Administration,
+Marketing, Purchasing, Human Resources, Shipping, IT, Executive, Public
+Relations, Sales, Finance, and Accounting. ]]></commentInRDBMS>
+<ownerDesignName>hrsql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>DEPT_NAME_NN</notNullConstraintName>
+</Column>
+<Column name="MANAGER_ID" id="15C7739C-5329-052A-523A-66CEEEA4E5EF">
+<sourceConnName>SYS</sourceConnName>
+<sourceObjSchema>DEPARTMENTS</sourceObjSchema>
+<sourceObjName>MANAGER_ID</sourceObjName>
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Manager_id of a department. Foreign key to employee_id column of employees table. The manager_id column of the employee table references this column.]]></commentInRDBMS>
+<ownerDesignName>hrsql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A31071B3-5F17-D399-3648-0E57FA6B0F2D" referredColumn="FF0E8A50-82E7-9376-13BD-8F42202D7DBC"/>
+</associations>
+</Column>
+<Column name="LOCATION_ID" id="77960222-3204-56C5-FA81-1EA8C0DF4A4F">
+<sourceConnName>SYS</sourceConnName>
+<sourceObjSchema>DEPARTMENTS</sourceObjSchema>
+<sourceObjName>LOCATION_ID</sourceObjName>
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Location id where a department is located. Foreign key to location_id column of locations table.]]></commentInRDBMS>
+<ownerDesignName>hrsql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04271C9D-3236-D2EF-14FE-214BC19F87EF" referredColumn="0816B167-E3B2-9B41-3E7F-2589DC978BD2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="78A8D09E-427C-3C3E-A3EF-0BB5074930B6" name="DEPT_ID_PK">
+<sourceConnName>SYS</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>DEPT_ID_PK</sourceObjName>
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50ACD110-C125-0F97-9B8D-E4C643621177"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B219D99F-6175-03CB-039F-58A0A6307612" schemaObject="BFCDB77A-CCD5-CBEE-740E-3B0C10D0E93E" name="DEPT_ID_PK">
+<sourceConnName>SYS</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>DEPT_ID_PK</sourceObjName>
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50ACD110-C125-0F97-9B8D-E4C643621177"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9CD9D431-3884-549D-342D-4151BFE91F09" schemaObject="BFCDB77A-CCD5-CBEE-740E-3B0C10D0E93E" name="DEPT_LOCATION_IX">
+<sourceConnName>SYS</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>DEPT_LOCATION_IX</sourceObjName>
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77960222-3204-56C5-FA81-1EA8C0DF4A4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9BD5A708-B691-02F9-AB61-D70F00784D3F" name="DEPT_LOC_FK">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:02 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77960222-3204-56C5-FA81-1EA8C0DF4A4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E7A55BD-65B0-88B4-1D58-ECBD55993567" name="DEPT_MGR_FK">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:02 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15C7739C-5329-052A-523A-66CEEEA4E5EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

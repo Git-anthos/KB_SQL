@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="LOCATIONS" directorySegmentName="seg_0" id="B9C42DAC-8DDC-5CDC-E160-8DE3458270EA">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<schemaObject>BFCDB77A-CCD5-CBEE-740E-3B0C10D0E93E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>DBACC5D3-3DC6-22A4-82BC-9801212CE417</segment>
+<tableSpace>37855A0B-D939-4D6E-30AC-FB20009A3891</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COUNTRY_ID" id="01BA77DA-132B-E9F3-F16A-52509FC73B12">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LOCATION_ID" id="0816B167-E3B2-9B41-3E7F-2589DC978BD2">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CITY" id="097CD104-E15C-83C3-C531-462ADF229C90">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STREET_ADDRESS" id="1ED7B596-8216-0441-083B-8679E6A99BBF">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STATE_PROVINCE" id="B1FC961D-7A1B-879C-0DCE-4247FE519076">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POSTAL_CODE" id="E2530F79-7AC7-E701-9705-A8D4B5E2DF77">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="LOC_STATE_PROVINCE_IX" id="14E47C5E-B1A0-6314-BCB4-006DE286DA53">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<schemaObject>BFCDB77A-CCD5-CBEE-740E-3B0C10D0E93E</schemaObject>
+<segment>5ACEF0BA-118D-CF90-5DA1-058517481E5E</segment>
+<tableSpace>37855A0B-D939-4D6E-30AC-FB20009A3891</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="LOC_CITY_IX" id="343F5556-5551-3CAE-6ADC-82685CBB97A4">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<schemaObject>BFCDB77A-CCD5-CBEE-740E-3B0C10D0E93E</schemaObject>
+<segment>5ACEF0BA-118D-CF90-5DA1-058517481E5E</segment>
+<tableSpace>37855A0B-D939-4D6E-30AC-FB20009A3891</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="LOC_ID_PK" id="B68A3333-06C8-285F-7ABA-F553C0D00AE8">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<schemaObject>BFCDB77A-CCD5-CBEE-740E-3B0C10D0E93E</schemaObject>
+<segment>5ACEF0BA-118D-CF90-5DA1-058517481E5E</segment>
+<tableSpace>37855A0B-D939-4D6E-30AC-FB20009A3891</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="LOC_COUNTRY_IX" id="F47A4E7A-CFC7-8E4A-6ED3-A781FCA3223F">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<schemaObject>BFCDB77A-CCD5-CBEE-740E-3B0C10D0E93E</schemaObject>
+<segment>5ACEF0BA-118D-CF90-5DA1-058517481E5E</segment>
+<tableSpace>37855A0B-D939-4D6E-30AC-FB20009A3891</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="LOC_C_ID_FK" id="0D9E6405-5C26-FACD-792B-FE144973CFD2">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:02 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="LOC_ID_PK" id="2B908A30-8F6F-D11F-2A7E-77C899B7B20E">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<segment>5ACEF0BA-118D-CF90-5DA1-058517481E5E</segment>
+<tableSpace>37855A0B-D939-4D6E-30AC-FB20009A3891</tableSpace>
+<existingIndex>B68A3333-06C8-285F-7ABA-F553C0D00AE8</existingIndex>
+<indexSegment>5ACEF0BA-118D-CF90-5DA1-058517481E5E</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

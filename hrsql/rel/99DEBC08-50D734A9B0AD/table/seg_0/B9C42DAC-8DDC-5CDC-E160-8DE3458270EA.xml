@@ -1,0 +1,197 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B9C42DAC-8DDC-5CDC-E160-8DE3458270EA" schemaObject="BFCDB77A-CCD5-CBEE-740E-3B0C10D0E93E" name="LOCATIONS">
+<sourceConnName>SYS</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LOCATIONS</sourceObjName>
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Locations table that contains specific address of a specific office,
+warehouse, and/or production site of a company. Does not store addresses /
+locations of customers. Contains 23 rows; references with the
+departments and countries tables. ]]></commentInRDBMS>
+<ownerDesignName>hrsql</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LOCATION_ID" id="0816B167-E3B2-9B41-3E7F-2589DC978BD2">
+<sourceConnName>SYS</sourceConnName>
+<sourceObjSchema>LOCATIONS</sourceObjSchema>
+<sourceObjName>LOCATION_ID</sourceObjName>
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primary key of locations table]]></commentInRDBMS>
+<ownerDesignName>hrsql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STREET_ADDRESS" id="1ED7B596-8216-0441-083B-8679E6A99BBF">
+<sourceConnName>SYS</sourceConnName>
+<sourceObjSchema>LOCATIONS</sourceObjSchema>
+<sourceObjName>STREET_ADDRESS</sourceObjName>
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street address of an office, warehouse, or production site of a company.
+Contains building number and street name]]></commentInRDBMS>
+<ownerDesignName>hrsql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSTAL_CODE" id="E2530F79-7AC7-E701-9705-A8D4B5E2DF77">
+<sourceConnName>SYS</sourceConnName>
+<sourceObjSchema>LOCATIONS</sourceObjSchema>
+<sourceObjName>POSTAL_CODE</sourceObjName>
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Postal code of the location of an office, warehouse, or production site
+of a company. ]]></commentInRDBMS>
+<ownerDesignName>hrsql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY" id="097CD104-E15C-83C3-C531-462ADF229C90">
+<sourceConnName>SYS</sourceConnName>
+<sourceObjSchema>LOCATIONS</sourceObjSchema>
+<sourceObjName>CITY</sourceObjName>
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[A not null column that shows city where an office, warehouse, or
+production site of a company is located. ]]></commentInRDBMS>
+<ownerDesignName>hrsql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>LOC_CITY_NN</notNullConstraintName>
+</Column>
+<Column name="STATE_PROVINCE" id="B1FC961D-7A1B-879C-0DCE-4247FE519076">
+<sourceConnName>SYS</sourceConnName>
+<sourceObjSchema>LOCATIONS</sourceObjSchema>
+<sourceObjName>STATE_PROVINCE</sourceObjName>
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[State or Province where an office, warehouse, or production site of a
+company is located.]]></commentInRDBMS>
+<ownerDesignName>hrsql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_ID" id="01BA77DA-132B-E9F3-F16A-52509FC73B12">
+<sourceConnName>SYS</sourceConnName>
+<sourceObjSchema>LOCATIONS</sourceObjSchema>
+<sourceObjName>COUNTRY_ID</sourceObjName>
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Country where an office, warehouse, or production site of a company is
+located. Foreign key to country_id column of the countries table.]]></commentInRDBMS>
+<ownerDesignName>hrsql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CCA79711-44EB-7D31-8600-123E116994CF" referredColumn="3D2C6FA4-C5EB-6B99-38E5-EEE9D12B847B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2B908A30-8F6F-D11F-2A7E-77C899B7B20E" name="LOC_ID_PK">
+<sourceConnName>SYS</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LOC_ID_PK</sourceObjName>
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0816B167-E3B2-9B41-3E7F-2589DC978BD2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="343F5556-5551-3CAE-6ADC-82685CBB97A4" schemaObject="BFCDB77A-CCD5-CBEE-740E-3B0C10D0E93E" name="LOC_CITY_IX">
+<sourceConnName>SYS</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LOC_CITY_IX</sourceObjName>
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="097CD104-E15C-83C3-C531-462ADF229C90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F47A4E7A-CFC7-8E4A-6ED3-A781FCA3223F" schemaObject="BFCDB77A-CCD5-CBEE-740E-3B0C10D0E93E" name="LOC_COUNTRY_IX">
+<sourceConnName>SYS</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LOC_COUNTRY_IX</sourceObjName>
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01BA77DA-132B-E9F3-F16A-52509FC73B12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B68A3333-06C8-285F-7ABA-F553C0D00AE8" schemaObject="BFCDB77A-CCD5-CBEE-740E-3B0C10D0E93E" name="LOC_ID_PK">
+<sourceConnName>SYS</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LOC_ID_PK</sourceObjName>
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0816B167-E3B2-9B41-3E7F-2589DC978BD2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="14E47C5E-B1A0-6314-BCB4-006DE286DA53" schemaObject="BFCDB77A-CCD5-CBEE-740E-3B0C10D0E93E" name="LOC_STATE_PROVINCE_IX">
+<sourceConnName>SYS</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LOC_STATE_PROVINCE_IX</sourceObjName>
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1FC961D-7A1B-879C-0DCE-4247FE519076"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D9E6405-5C26-FACD-792B-FE144973CFD2" name="LOC_C_ID_FK">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:02 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01BA77DA-132B-E9F3-F16A-52509FC73B12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

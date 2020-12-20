@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="121F5CCB-898E-B863-4F3E-48575D39815E" mainViewID="6660ED06-7733-613C-174B-CF5FAEFE4271">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:13:15 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

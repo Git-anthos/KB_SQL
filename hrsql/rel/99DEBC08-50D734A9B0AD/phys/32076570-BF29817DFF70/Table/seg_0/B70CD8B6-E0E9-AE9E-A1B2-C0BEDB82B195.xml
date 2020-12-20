@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="JOB_HISTORY" directorySegmentName="seg_0" id="B70CD8B6-E0E9-AE9E-A1B2-C0BEDB82B195">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<schemaObject>BFCDB77A-CCD5-CBEE-740E-3B0C10D0E93E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>DBACC5D3-3DC6-22A4-82BC-9801212CE417</segment>
+<tableSpace>37855A0B-D939-4D6E-30AC-FB20009A3891</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="START_DATE" id="09456841-CD3B-E843-1214-F40C029FD09A">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="END_DATE" id="491A53AC-0683-4348-D460-2C74445E32B5">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPLOYEE_ID" id="6CD4DE8D-8BCD-03A0-8552-091A0F8585E3">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPARTMENT_ID" id="782BF17E-30F8-E8FA-97E1-75FCB5A7F432">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JOB_ID" id="843743BF-681A-133F-2336-5B1A822BAED8">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="JHIST_DEPARTMENT_IX" id="27D7781F-7B2E-B21F-C7DD-864E6537AB71">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<schemaObject>BFCDB77A-CCD5-CBEE-740E-3B0C10D0E93E</schemaObject>
+<segment>5ACEF0BA-118D-CF90-5DA1-058517481E5E</segment>
+<tableSpace>37855A0B-D939-4D6E-30AC-FB20009A3891</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="JHIST_EMPLOYEE_IX" id="93009A2D-2891-9A4B-EFFA-C9889C7E8829">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<schemaObject>BFCDB77A-CCD5-CBEE-740E-3B0C10D0E93E</schemaObject>
+<segment>5ACEF0BA-118D-CF90-5DA1-058517481E5E</segment>
+<tableSpace>37855A0B-D939-4D6E-30AC-FB20009A3891</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="JHIST_JOB_IX" id="A201B1FD-B810-6E00-C5EA-7F87E3251511">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<schemaObject>BFCDB77A-CCD5-CBEE-740E-3B0C10D0E93E</schemaObject>
+<segment>5ACEF0BA-118D-CF90-5DA1-058517481E5E</segment>
+<tableSpace>37855A0B-D939-4D6E-30AC-FB20009A3891</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="JHIST_EMP_ID_ST_DATE_PK" id="F988C3B7-E4E6-058A-C884-5DC0AEBCCAD2">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<schemaObject>BFCDB77A-CCD5-CBEE-740E-3B0C10D0E93E</schemaObject>
+<segment>5ACEF0BA-118D-CF90-5DA1-058517481E5E</segment>
+<tableSpace>37855A0B-D939-4D6E-30AC-FB20009A3891</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="JHIST_DEPT_FK" id="1B00B620-D8D9-961C-8F60-639CF342B2F0">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:02 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="JHIST_JOB_FK" id="5DE3D183-9BA2-9904-4C39-054CC158B2FB">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:02 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="JHIST_EMP_FK" id="8337867E-9B9A-9D1B-9786-3B123E364262">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:02 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="JHIST_EMP_ID_ST_DATE_PK" id="18874954-75E9-E6E1-088D-0C4A40CF4C9E">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:01 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<segment>5ACEF0BA-118D-CF90-5DA1-058517481E5E</segment>
+<tableSpace>37855A0B-D939-4D6E-30AC-FB20009A3891</tableSpace>
+<existingIndex>F988C3B7-E4E6-058A-C884-5DC0AEBCCAD2</existingIndex>
+<indexSegment>5ACEF0BA-118D-CF90-5DA1-058517481E5E</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="JHIST_DATE_INTERVAL" id="88E07273-A8DA-E06D-BEC1-64129BE24BE5">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:16:02 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+</TableCheckConstraint>
+</tableCheckConstraints>
+</TableProxyOraclev11g>

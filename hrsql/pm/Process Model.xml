@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="A0FF48DB-1AA5-5901-B497-4A2E10355C14">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:13:15 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

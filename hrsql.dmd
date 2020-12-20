@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="hrsql" id="4FCAB8D5-A69A-BAE3-368B-ED7AEEF2E660" version="3.5">
+<createdBy>dolba</createdBy>
+<createdTime>2020-12-20 06:13:15 UTC</createdTime>
+<ownerDesignName>hrsql</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>4FCAB8D5-A69A-BAE3-368B-ED7AEEF2E660</designId>
+</OSDM_Design>
